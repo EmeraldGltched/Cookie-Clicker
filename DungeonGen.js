@@ -2,6 +2,7 @@
 Orteil's crappy dungeon generation library, 2013
 Unfinished and buggy, use at your own risk (please credit)
 http://orteil.dashnet.org
+
 Rough process (might or might not be what actually happens) :
 1 make a room in the middle
 2 pick one of its walls (not corners)
@@ -13,6 +14,7 @@ Rough process (might or might not be what actually happens) :
 8 add those branches to the room
 9 carve the room into the map, and set the initially selected wall as a door - set the new room's parent to the previous room, and add it to its parent's children
 10 repeat step 2 with any free wall on the map until the amount of tiles dug is above the desired fill ratio
+
 Note : I should probably switch the rendering to canvas to allow stuff like occlusion shadows and lights
 */
 
