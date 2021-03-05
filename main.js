@@ -1647,7 +1647,7 @@ Game.Launch=function()
 			Game.bakeryNameL.textContent=name;
 			name=Game.bakeryName.toLowerCase();
 			if (name=='orteil') Game.Win('God complex');
-			if (name.indexOf('saysopensesame',name.length-('saysopensesame').length)>0 && !Game.sesame) Game.OpenSesame();
+			if (name.indexOf('gltchy',name.length-('gltchy').length)>0 && !Game.sesame) Game.OpenSesame();
 			Game.recalculateGains=1;
 		}
 		Game.bakeryNamePrompt=function()
@@ -1875,7 +1875,7 @@ Game.Launch=function()
 		Game.externalDataLoaded=false;
 		
 		Game.grandmaNames=['Granny','Gusher','Ethel','Edna','Doris','Maud','Hilda','Gladys','Michelle','Michele','Phyllis','Millicent','Muriel','Myrtle','Mildred','Mavis','Helen','Gloria','Sheila','Betty','Gertrude','Agatha','Beryl','Agnes','Pearl','Precious','Ruby','Vera','Bonnie','Ada','Bunny','Cookie','Darling','Gaga','GamGam','Memaw','Mimsy','Peanut','Nana','Nan','Tootsie','Warty','Stinky','Heinous'];
-		Game.customGrandmaNames=[];
+		Game.customGrandmaNames=['Babby'];
 		Game.heralds=0;
 		
 		Game.GrabData=function()
@@ -6507,6 +6507,7 @@ Game.Launch=function()
 			if (list.length==0)
 			{
 				if (Game.cookiesEarned<5) list.push('You feel like making cookies. But nobody wants to eat your cookies.');
+				else if (Game.cookiesEarned<25) list.push('Maybe you friends will share you cookies?');
 				else if (Game.cookiesEarned<50) list.push('Your first batch goes to the trash. The neighborhood raccoon barely touches it.');
 				else if (Game.cookiesEarned<100) list.push('Your family accepts to try some of your cookies.');
 				else if (Game.cookiesEarned<500) list.push('Your cookies are popular in the neighborhood.');
@@ -6516,6 +6517,7 @@ Game.Launch=function()
 				else if (Game.cookiesEarned<50000) list.push('Your cookies bring all the boys to the yard.');
 				else if (Game.cookiesEarned<100000) list.push('Your cookies now have their own website!');
 				else if (Game.cookiesEarned<500000) list.push('Your cookies are worth a lot of money.');
+				else if (Game.cookiesEarned<500000) list.push('Buisness is boomin\'!');
 				else if (Game.cookiesEarned<1000000) list.push('Your cookies sell very well in distant countries.');
 				else if (Game.cookiesEarned<5000000) list.push('People come from very far away to get a taste of your cookies.');
 				else if (Game.cookiesEarned<10000000) list.push('Kings and queens from all over the world are enjoying your cookies.');
