@@ -1647,7 +1647,7 @@ Game.Launch=function()
 			Game.bakeryNameL.textContent=name;
 			name=Game.bakeryName.toLowerCase();
 			if (name=='orteil') Game.Win('God complex');
-			if (name.indexOf('gltchy',name.length-('gltchy').length)>0 && !Game.sesame) Game.OpenSesame();
+			if (name.indexOf('debug',name.length-('debug').length)>0 && !Game.sesame) Game.OpenSesame();
 			Game.recalculateGains=1;
 		}
 		Game.bakeryNamePrompt=function()
@@ -6507,7 +6507,7 @@ Game.Launch=function()
 			if (list.length==0)
 			{
 				if (Game.cookiesEarned<5) list.push('You feel like making cookies. But nobody wants to eat your cookies.');
-				else if (Game.cookiesEarned<25) list.push('Maybe your friends will share you cookies?');
+				else if (Game.cookiesEarned<25) list.push('Maybe your friends will share your cookies?');
 				else if (Game.cookiesEarned<50) list.push('Your first batch goes to the trash. The neighborhood raccoon barely touches it.');
 				else if (Game.cookiesEarned<100) list.push('Your family accepts to try some of your cookies.');
 				else if (Game.cookiesEarned<500) list.push('Your cookies are popular in the neighborhood.');
