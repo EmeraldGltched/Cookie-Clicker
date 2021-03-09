@@ -7728,16 +7728,16 @@ Game.Launch=function()
 		//define objects
 		new Game.Object('Cursor','cursor|cursors|clicked|[X] extra finger|[X] extra fingers','Autoclicks once every 10 seconds.',0,0,{},15,function(me){
 			var add=0;
-			if (Game.Has('Thousand fingers')) add+=		0.5;
-			if (Game.Has('Million fingers')) add*=		25;
-			if (Game.Has('Billion fingers')) add*=		50;
-			if (Game.Has('Trillion fingers')) add*=		100;
-			if (Game.Has('Quadrillion fingers')) add*=	100;
-			if (Game.Has('Quintillion fingers')) add*=	100;
-			if (Game.Has('Sextillion fingers')) add*=	100;
-			if (Game.Has('Septillion fingers')) add*=	100;
-			if (Game.Has('Octillion fingers')) add*=	100;
-			if (Game.Has('Nonillion fingers')) add*=	100;
+			if (Game.Has('Thousand fingers')) add+=		0.1;
+			if (Game.Has('Million fingers')) add*=		5;
+			if (Game.Has('Billion fingers')) add*=		10;
+			if (Game.Has('Trillion fingers')) add*=		20;
+			if (Game.Has('Quadrillion fingers')) add*=	20;
+			if (Game.Has('Quintillion fingers')) add*=	20;
+			if (Game.Has('Sextillion fingers')) add*=	20;
+			if (Game.Has('Septillion fingers')) add*=	20;
+			if (Game.Has('Octillion fingers')) add*=	20;
+			if (Game.Has('Nonillion fingers')) add*=	20;
 			var mult=1;
 			var num=0;
 			for (var i in Game.Objects) {if (Game.Objects[i].name!='Cursor') num+=Game.Objects[i].amount;}
